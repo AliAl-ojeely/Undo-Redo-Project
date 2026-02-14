@@ -210,7 +210,7 @@ public:
 		return true;
 	}
 
-	bool InsertAt(T Index, T Value)
+	bool InsertAt(int Index, T Value)
 	{
 		if (Index > _Size || Index < 0)
 		{
@@ -245,7 +245,7 @@ public:
 		InsertAt(0, Value);
 	}
 
-	bool InsertBefore(T Index, T Value)
+	bool InsertBefore(int Index, T Value)
 	{
 		if (Index < 1)
 			return InsertAt(0, Value);
